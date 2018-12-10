@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">
+            ОПИТУВАННЯ
+        </h1>
+        <img src="pollimage.jpg" alt="poll"/>
+    </header>
+    <form method="POST" action="https://formspree.io/vedernikovmax@gmail.com">
+        <label>
+            Ваше ім'я:<input type="text" placeholder="Ваше ім'я" name="name" required>
+        </label>
+        <br>
+        <label>
+            Ваша електронна скринька:<input type="email" placeholder="Ваш email" name="email" required>
+        </label>
+        <br>
+        <label>
+            Ваш вибір:<input type="text" placeholder="Ваш вибір" name="choice" list="kandidat" required>
+                <datalist id="kandidat">
+                    <option value="Юлія Тимошенко"></option>
+                    <option value="Петро Порошенко"></option>
+                    <option value="Анатолій Гриценко"></option>
+                    <option value="Олег Ляшко"></option>
+                    <option value="Вадим Рабінович"></option>
+                    <option value="Андрій Садовий"></option>
+                    <option value="Олег Тягнибок"></option>
+                    <option value="Святослав Вакарчук"></option>
+                    <option value="Волдимир Зеленський"></option>
+                    <option value="Юрій Бойко"></option>
+                    <option value="інший кандидат"></option>
+                </datalist>
+        </label>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
